@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Gallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Gallery</h1>
+    <p>Browse our collection by category and click any photo to enlarge it</p>
+  </header>
+
+  <nav class="filters">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="nature">Nature</button>
+    <button class="filter-btn" data-filter="city">City</button>
+    <button class="filter-btn" data-filter="animals">Animals</button>
+    <button class="filter-btn" data-filter="food">Food</button>
+  </nav>
+
+  <main class="gallery" id="gallery">
+
+    <figure class="gallery-item" data-category="nature">
+      <img src="https://picsum.photos/id/1018/600/450" alt="Mountain valley with a river">
+      <figcaption>Mountain Valley</figcaption>
+    </figure>
+    <figure class="gallery-item" data-category="nature">
+      <img src="https://picsum.photos/id/1015/600/450" alt="River winding through hills">
+      <figcaption>Winding River</figcaption>
+    </figure>
+    <figure class="gallery-item" data-category="nature">
+      <img src="https://picsum.photos/id/1039/600/450" alt="Forest path in autumn">
+      <figcaption>Autumn Path</figcaption>
+    </figure>
+
+    <figure class="gallery-item" data-category="city">
+      <img src="https://picsum.photos/id/1067/600/450" alt="City skyline at dusk">
+      <figcaption>City Skyline</figcaption>
+    </figure>
+    <figure class="gallery-item" data-category="city">
+      <img src="https://picsum.photos/id/1076/600/450" alt="Narrow street between old buildings">
+      <figcaption>Old Town Street</figcaption>
+    </figure>
+    <figure class="gallery-item" data-category="city">
+      <img src="https://picsum.photos/id/1041/600/450" alt="Bridge over a city river">
+      <figcaption>City Bridge</figcaption>
+    </figure>
+
+    <figure class="gallery-item" data-category="animals">
+      <img src="https://picsum.photos/id/237/600/450" alt="A dog sitting on wooden floor">
+      <figcaption>Good Boy</figcaption>
+    </figure>
+    <figure class="gallery-item" data-category="animals">
+      <img src="https://picsum.photos/id/1074/600/450" alt="A deer standing in a field">
+      <figcaption>Field Deer</figcaption>
+    </figure>
+    <figure class="gallery-item" data-category="animals">
+      <img src="https://picsum.photos/id/1084/600/450" alt="A horse grazing in a meadow">
+      <figcaption>Grazing Horse</figcaption>
+    </figure>
+
+    <figure class="gallery-item" data-category="food">
+      <img src="https://picsum.photos/id/292/600/450" alt="A plate of food close up">
+      <figcaption>Plated Dish</figcaption>
+    </figure>
+    <figure class="gallery-item" data-category="food">
+      <img src="https://picsum.photos/id/431/600/450" alt="Fresh fruit arranged on a table">
+      <figcaption>Fresh Fruit</figcaption>
+    </figure>
+    <figure class="gallery-item" data-category="food">
+      <img src="https://picsum.photos/id/365/600/450" alt="Coffee cup on a wooden table">
+      <figcaption>Morning Coffee</figcaption>
+    </figure>
+  </main>
+
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose">&times;</button>
+    <button class="lightbox-nav prev" id="prevBtn">&#10094;</button>
+    <img src="" alt="" id="lightboxImg">
+    <button class="lightbox-nav next" id="nextBtn">&#10095;</button>
+    <p class="lightbox-caption" id="lightboxCaption"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
